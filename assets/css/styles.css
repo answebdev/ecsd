@@ -1,0 +1,86 @@
+body {
+  background-color: #f4f4f4;
+  transition: 0.5s;
+}
+
+.dark-mode {
+  background-color: #121212;
+  color: #121212;
+  transition: 0.5s;
+}
+
+.dark-mode-heading {
+  color: #f4f4f4;
+  transition: 0.5s;
+}
+
+.dark-mode-card {
+  background-color: #121212;
+  color: #f4f4f4 !important;
+  transition: 0.5s;
+}
+
+#mode-btn {
+  box-shadow: none;
+  border-radius: 50%;
+}
+
+.modal-open {
+  overflow: auto !important;
+  padding-right: 0 !important;
+}
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.students {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.heading,
+.sub-heading,
+.sub-heading-text {
+  text-align: center;
+}
+
+.card-container {
+  margin: 40px 0 40px 0;
+}
+
+.card {
+  margin: 40px;
+}
+
+button {
+  cursor: pointer;
+}
+
+.details-btn {
+  font-weight: bold;
+  color: #4343da;
+  border: none;
+  background-color: #ffffff;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.details-btn:hover {
+  color: tomato;
+}
+
+.dark-mode-details-btn {
+  background-color: #121212;
+}
+
+.details-section {
+  color: #000000;
+  display: none;
+}
+
+.show-details {
+  display: block;
+}
