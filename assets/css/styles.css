@@ -1,11 +1,15 @@
+:root {
+  --darkMode: #121212;
+}
+
 body {
   background-color: #f4f4f4;
   transition: 0.5s;
 }
 
 .dark-mode {
-  background-color: #121212;
-  color: #121212;
+  background-color: var(--darkMode);
+  color: var(--darkMode);
   transition: 0.5s;
 }
 
@@ -15,7 +19,7 @@ body {
 }
 
 .dark-mode-card {
-  background-color: #121212;
+  background-color: var(--darkMode);
   color: #f4f4f4 !important;
   transition: 0.5s;
 }
@@ -55,32 +59,43 @@ body {
   margin: 40px;
 }
 
+.card-title {
+  letter-spacing: 0.5px;
+}
+
 button {
   cursor: pointer;
+  letter-spacing: 0.5px;
 }
 
-.details-btn {
-  font-weight: bold;
-  color: #4343da;
-  border: none;
+.dark-mode-accordion {
+  background-color: var(--darkMode) !important;
+  color: #f4f4f4;
+}
+
+.accordion {
   background-color: #ffffff;
-  padding: 0;
-  margin-bottom: 20px;
+  color: #4343da;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  font-weight: bold;
+  padding: 10px 0 15px 0;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
 }
 
-.details-btn:hover {
-  color: tomato;
-}
+/* .active, .accordion:hover {
+  background-color: #ccc;
+} */
 
-.dark-mode-details-btn {
-  background-color: #121212;
-}
-
-.details-section {
-  color: #000000;
-  display: none;
-}
-
-.show-details {
-  display: block;
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  background-color: #ffffff;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  line-height: 1.8;
 }

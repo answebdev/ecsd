@@ -1,0 +1,20 @@
+{
+  "name": "ecsd",
+  "version": "1.0.0",
+  "description": "Low Core Class",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/answebdev/ecsd.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/answebdev/ecsd/issues"
+  },
+  "homepage": "https://github.com/answebdev/ecsd#readme"
+}
