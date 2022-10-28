@@ -2,8 +2,6 @@
 // Wideo: https://wideo.co/text-to-speech/
 // Sad Trombone: https://www.myinstants.com/en/instant/sad-trombone/
 // Fanfare: https://free-loops.com/7590-charge-fanfare-mp3.html
-// Laughs: https://mixkit.co/free-sound-effects/laugh/
-// Simpsons Laughs: https://www.findsounds.com/ISAPI/search.dll?keywords=Simpsons
 
 // Data
 const studentData = [
@@ -13,7 +11,6 @@ const studentData = [
     country: 'n/a',
     likes: 'n/a',
     dislikes: 'n/a',
-    interesting_fact: '',
     img: 'https://www.pngitem.com/pimgs/m/258-2584491_kenny-south-park-png-transparent-png.png',
     bio: 'Homework loves you.',
     button_id: 'abduladolf',
@@ -24,7 +21,6 @@ const studentData = [
     country: 'Saudi Arabia',
     likes: 'Eggs and cheese',
     dislikes: 'Not eating eggs and cheese',
-    interesting_fact: '',
     img: 'https://i1.sndcdn.com/artworks-000379239159-qi6n15-t500x500.jpg',
     bio: 'Likes bread, cheese, eggs (sometimes chicken) for breakfast.',
     button_id: 'amin',
@@ -32,9 +28,8 @@ const studentData = [
   {
     id: 3,
     name: 'Mutaz',
-    likes: 'Hanging out with friends',
-    dislikes: 'Nosy people',
-    interesting_fact: '',
+    likes: 'Cleaning his ears',
+    dislikes: 'When Papa Mutaz sneaks into his room secretly',
     country: 'Saudi Arabia',
     img: 'https://entertainment.time.com/wp-content/uploads/sites/3/2013/05/fictioninfluence_list_homersimpson.jpg',
     bio: 'Cleans his ears every day. Sleeps while Papa Mutaz cleans his room.',
@@ -45,7 +40,6 @@ const studentData = [
     name: 'Abdulaziz',
     likes: 'After parties',
     dislikes: 'No after parties',
-    interesting_fact: '',
     country: 'Saudi Arabia',
     img: 'https://i1.sndcdn.com/avatars-000022201824-zd09tb-t500x500.jpg',
     bio: "Sometimes Papa Mutaz. Sometimes sneaks in to clean Mutaz's room.",
@@ -56,7 +50,6 @@ const studentData = [
     name: 'Nasser',
     likes: 'Recording video selfies, Club Nasser',
     dislikes: 'Homework',
-    interesting_fact: '',
     country: 'Saudi Arabia',
     img: 'https://us.123rf.com/450wm/mickallnice/mickallnice1705/mickallnice170500002/77255576-kid-doing-a-homework-vector-and-illustration.jpg?ver=6',
     bio: 'Loves doing homework every day, but also has homework phobia.',
@@ -67,7 +60,6 @@ const studentData = [
     name: 'Jenny',
     likes: 'The beach',
     dislikes: 'n/a',
-    interesting_fact: '',
     country: 'Taiwan',
     img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNCNwfy7UW0lHwx6p8BPlTNgclkr3pMCIDBHfQGJJKDsOvEOX4GxhrX5lpWgwqayOF7VA&usqp=CAU',
     bio: 'Wants to go on vacation. Loves taking pictures of the sunset.',
@@ -78,7 +70,6 @@ const studentData = [
     name: 'Mohammad',
     likes: 'Donuts',
     dislikes: 'A class without donuts',
-    interesting_fact: '',
     country: 'Saudi Arabia',
     img: 'https://ih1.redbubble.net/image.986147108.2204/pp,840x830-pad,1000x1000,f8f8f8.jpg',
     bio: 'Bringer of donuts.',
@@ -89,7 +80,6 @@ const studentData = [
     name: 'Saleh',
     likes: 'n/a',
     dislikes: 'n/a',
-    interesting_fact: '',
     country: 'Saudi Arabia',
     img: 'https://i.pinimg.com/originals/dd/0a/7b/dd0a7b1b9cbf38774f80e4b9042608ea.jpg',
     bio: 'Bringer of himself.',
@@ -100,7 +90,6 @@ const studentData = [
     name: 'Rashed',
     likes: 'n/a',
     dislikes: 'n/a',
-    interesting_fact: '',
     country: 'Saudi Arabia',
     img: 'https://preview.redd.it/erimg7yicns41.jpg?auto=webp&s=6f1d86315cef37dc5f8d71edb613271614b28604',
     bio: 'First graduate to the next level.',
@@ -111,7 +100,6 @@ const studentData = [
     name: 'Masaumi',
     likes: 'Sleep, baseball, and dogs',
     dislikes: 'Not sleeping',
-    interesting_fact: '',
     country: 'Japan',
     img: 'https://i.dlpng.com/static/png/4654585-boy-walking-the-dog-walking-clipart-dog-clipart-boy-clipart-png-boy-take-a-walk-png-650_651_preview.png',
     bio: 'Has two cute chihuahuas and loves baseball.',
@@ -122,7 +110,6 @@ const studentData = [
     name: 'Michelle',
     likes: 'San Diego',
     dislikes: 'Working as an accountant',
-    interesting_fact: '',
     country: 'Taiwan',
     img: 'https://us.123rf.com/450wm/esheluxina/esheluxina1811/esheluxina181100153/127708976-business-and-finance-flat-style-vector-illustration-clipart-.jpg?ver=6',
     bio: 'Comes from Taiwan and works as an accountant.',
@@ -131,9 +118,8 @@ const studentData = [
   {
     id: 12,
     name: 'Yazeed',
-    likes: 'Pasta and waka waka',
-    dislikes: 'Cold weather',
-    interesting_fact: '',
+    likes: 'Waka waka',
+    dislikes: 'A day without waka waka',
     country: 'Saudi Arabia',
     img: 'https://clickclack.es/WebRoot/Store14/Shops/536773c5-8a25-42ea-8b30-6260eeefd1b5/629B/05BA/0602/3EEA/652D/0A48/3559/1587/_KAI9022_ml.JPG',
     bio: 'My name is Yazeed. Waka waka waka.',
@@ -160,29 +146,27 @@ const studentContainer = document.querySelector('.students');
 const studentList = studentData
   .map((student) => {
     return `
-        <div class="row">
-            <div class="col-sm-4">
-                <div class="card" style="width: 18rem;">
-                    <div class="card-body">
-                        <img src=${student.img} class="card-img-top" alt=${student.name}>
-                        <h5 style="margin-top: 10px" class="card-title">${student.name}</h5>
-                        <p class="card-text">${student.bio}</p>
-                        <button class="accordion">DETAILS</button>
-                        <div class="panel">
-                          <p>
-                            <strong>Country: </strong>${student.country}<br />
-                            <strong>Likes: </strong>${student.likes}<br />
-                            <strong>Dislikes: </strong>${student.dislikes}
-                          </p>
-                        </div>
-                        <div>
-                            <button id="${student.button_id}-btn" type="button" class="btn btn-dark">Listen <i class="fa-solid fa-circle-play"></i></button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        `;
+          <div class="row">
+              <div class="col-sm-4">
+                  <div class="card" style="width: 18rem;">
+                      <div class="card-body">
+                          <img src=${student.img} class="card-img-top" alt=${student.name}>
+                          <h5 style="margin-top: 10px" class="card-title">${student.name}</h5>
+                          <p class="card-text">${student.bio}</p>
+                          <button class="details-btn" type="button">DETAILS</button>
+                          <div class="details-section">
+                              <p><strong>Country: </strong>${student.country}</p>
+                              <p><strong>Likes: </strong>${student.likes}</p>
+                              <p><strong>Dislikes: </strong>${student.dislikes}</p>
+                          </div>
+                          <div>
+                              <button id="${student.button_id}-btn" type="button" class="btn btn-dark">Listen <i class="fa-solid fa-circle-play"></i></button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          `;
   })
   .join('');
 
@@ -192,7 +176,6 @@ studentContainer.innerHTML = studentList;
 var trombone = document.getElementById('trombone-btn');
 var woohoo = document.getElementById('woohoo-btn');
 var charge = document.getElementById('charge-btn');
-var laugh = document.getElementById('laugh-btn');
 var button1 = document.getElementById('amin-btn');
 var button2 = document.getElementById('mutaz-btn');
 var button3 = document.getElementById('aziz-btn');
@@ -206,7 +189,6 @@ var button8 = document.getElementById('yazeed-btn');
 trombone.addEventListener('click', playTrombone);
 woohoo.addEventListener('click', playWoohoo);
 charge.addEventListener('click', playCharge);
-laugh.addEventListener('click', playLaugh);
 button1.addEventListener('click', playAmin);
 button2.addEventListener('click', playMutaz);
 button3.addEventListener('click', playAziz);
@@ -229,11 +211,6 @@ function playWoohoo() {
 
 function playCharge() {
   var audio = new Audio('./assets/audio/fanfare.mp3');
-  audio.play();
-}
-
-function playLaugh() {
-  var audio = new Audio('./assets/audio/HomerLaugh1.mp3');
   audio.play();
 }
 
@@ -315,51 +292,26 @@ function darkMode() {
   detailsBtns.forEach((detailsBtn) => {
     detailsBtn.classList.toggle('dark-mode-details-btn');
   });
-
-  var accordions = document.querySelectorAll('.accordion');
-  accordions.forEach((accordion) => {
-    accordion.classList.toggle('dark-mode-accordion');
-  });
-
-  var accordionPanels = document.querySelectorAll('.panel');
-  accordionPanels.forEach((accordionPanel) => {
-    accordionPanel.classList.toggle('dark-mode-accordion');
-  });
-}
-
-// Accordion
-// Adapted from: https://www.w3schools.com/howto/howto_js_accordion.asp
-var acc = document.getElementsByClassName('accordion');
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener('click', function () {
-    this.classList.toggle('active');
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight) {
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + 'px';
-    }
-  });
 }
 
 // Details Button Logic
 // See: https://stackoverflow.com/questions/64243958/how-do-i-change-the-property-of-a-clicked-element-which-shares-its-class-with-ma
 // Also: https://stackoverflow.com/questions/57774772/how-to-get-child-element-in-a-click-event
 
-// let detailsBtn = document.querySelectorAll('.details-btn');
+let detailsBtn = document.querySelectorAll('.details-btn');
 
-// function studentDetails(event) {
-//   // Target button clicked and toggle class
-//   event.target.parentNode
-//     .querySelector('.details-section')
-//     .classList.toggle('show-details');
-// }
+function studentDetails(event) {
+  // Target button clicked and toggle class
+  event.target.parentNode
+    .querySelector('.details-section')
+    .classList.toggle('show-details');
+}
 
-// detailsBtn.forEach((details) =>
-//   details.addEventListener('click', studentDetails)
-// );
+detailsBtn.forEach((details) =>
+  details.addEventListener('click', studentDetails)
+);
+
+// End Details Button Logic
 
 // Back to Top button: https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
 let mybutton = document.getElementById('backToTopBtn');

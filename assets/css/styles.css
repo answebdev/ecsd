@@ -99,3 +99,35 @@ button {
   transition: max-height 0.2s ease-out;
   line-height: 1.8;
 }
+
+/* Orignal CSS for Details Accordion section created with Vanilla JavaScript.
+See original JavaScript in 'app_original.js' file in 'Details Button Logic' section.
+Here, the clicked button is targeted, which toggles the class.
+By doing this, only the Details Section for the card that is clicked is displayed, rather than the Details Section for all of the cards.
+The following is the CSS used in this logic: */
+
+/* .details-btn {
+  font-weight: bold;
+  color: #4343da;
+  border: none;
+  background-color: #ffffff;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.details-btn:hover {
+  color: tomato;
+} */
+
+/* .dark-mode-details-btn {
+  background-color: #121212;
+} */
+
+/* .details-section {
+  color: #000000;
+  display: none;
+}
+
+.show-details {
+  display: block;
+} */
