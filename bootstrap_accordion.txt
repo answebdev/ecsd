@@ -1,0 +1,55 @@
+                                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                                      <div class="accordion-item">
+                                        <h2 class="accordion-header" id="flush-headingOne">
+                                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                            <strong>Details</strong>
+                                          </button>
+                                        </h2>
+                                        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                          <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <br />
+
+
+
+
+            document.addEventListener('click', function handleClick(event) {
+                event.target.classList.toggle('accordion-button collapsed');
+                event.target.style.backgroundColor = "#FF0000";
+            });
+
+
+                                    <div>
+                                        <p>
+                                            <strong>Details</strong>
+                                            <div style="float:right; cursor:pointer;">
+                                                <span>
+                                                  <i class='fa-solid fa-plus'></i>
+                                                </span>
+                                            </div>
+                                        </p>
+                                        <p class='details'>
+                                            Details go here...
+                                        </p>
+                                    </div>
+
+
+
+            let detailsBtn = document.getElementsByTagName('p')
+
+            for (var i = 0; i < detailsBtn.length; ++i) {
+                detailsBtn[i].addEventListener('click', function (event) {
+                    event.target.classList.toggle('mystyle');
+                })
+            }
+
+    .mystyle {
+        width: 100%;
+        padding: 25px;
+        background-color: coral;
+        color: white;
+        font-size: 25px;
+        box-sizing: border-box;
+    }

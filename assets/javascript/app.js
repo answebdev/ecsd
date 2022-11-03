@@ -113,7 +113,7 @@ const studentData = [
     dislikes: 'Not sleeping',
     interesting_fact: '',
     country: 'Japan',
-    img: 'https://i.dlpng.com/static/png/4654585-boy-walking-the-dog-walking-clipart-dog-clipart-boy-clipart-png-boy-take-a-walk-png-650_651_preview.png',
+    img: 'https://static.vecteezy.com/system/resources/previews/006/922/012/original/cute-boy-with-pug-dog-and-corgi-dog-cartoon-icon-illustration-animal-people-icon-concept-isolated-premium-vector.jpg',
     bio: 'Has two cute chihuahuas and loves baseball.',
     button_id: '',
   },
@@ -135,9 +135,32 @@ const studentData = [
     dislikes: 'Cold weather',
     interesting_fact: '',
     country: 'Saudi Arabia',
-    img: 'https://clickclack.es/WebRoot/Store14/Shops/536773c5-8a25-42ea-8b30-6260eeefd1b5/629B/05BA/0602/3EEA/652D/0A48/3559/1587/_KAI9022_ml.JPG',
+    // img: 'https://clickclack.es/WebRoot/Store14/Shops/536773c5-8a25-42ea-8b30-6260eeefd1b5/629B/05BA/0602/3EEA/652D/0A48/3559/1587/_KAI9022_ml.JPG',
+    img: './assets/images/yazeed.png',
     bio: 'My name is Yazeed. Waka waka waka.',
     button_id: 'yazeed',
+  },
+  {
+    id: 13,
+    name: 'Bader',
+    likes: 'Arabic music and Johnny Cash',
+    dislikes: 'Homework',
+    interesting_fact: '',
+    country: 'Saudi Arabia',
+    img: 'https://th.bing.com/th/id/R.ff061c5054e6a32b783555964a2f3e54?rik=zSvwCku7bIGOhw&riu=http%3a%2f%2fpre03.deviantart.net%2fff82%2fth%2fpre%2fi%2f2013%2f059%2fe%2f1%2fmoustache_iron_man_by_future_parker-d5whjo5.png&ehk=go%2brbgkl2ZSQGWklblsClGiL%2ferEhzZAj1DPUR27hNk%3d&risl=&pid=ImgRaw&r=0',
+    bio: 'Do you like my moustache?',
+    button_id: '',
+  },
+  {
+    id: 14,
+    name: 'Joao',
+    likes: 'Soccer and Carnival',
+    dislikes: 'Homework',
+    interesting_fact: '',
+    country: 'Brazil',
+    img: 'https://media.istockphoto.com/vectors/brazil-sport-fan-with-flag-and-horn-vector-id486835873?k=20&m=486835873&s=612x612&w=0&h=3cN_3NL6sDw3dMJkg9BSu6Jed1ATbh2rA_QhQ0TbzXQ=',
+    bio: '',
+    button_id: '',
   },
 ];
 
@@ -193,6 +216,7 @@ var trombone = document.getElementById('trombone-btn');
 var woohoo = document.getElementById('woohoo-btn');
 var charge = document.getElementById('charge-btn');
 var laugh = document.getElementById('laugh-btn');
+var samij = document.getElementById('samij-btn');
 var button1 = document.getElementById('amin-btn');
 var button2 = document.getElementById('mutaz-btn');
 var button3 = document.getElementById('aziz-btn');
@@ -207,6 +231,7 @@ trombone.addEventListener('click', playTrombone);
 woohoo.addEventListener('click', playWoohoo);
 charge.addEventListener('click', playCharge);
 laugh.addEventListener('click', playLaugh);
+samij.addEventListener('click', playSamij);
 button1.addEventListener('click', playAmin);
 button2.addEventListener('click', playMutaz);
 button3.addEventListener('click', playAziz);
@@ -234,6 +259,11 @@ function playCharge() {
 
 function playLaugh() {
   var audio = new Audio('./assets/audio/HomerLaugh1.mp3');
+  audio.play();
+}
+
+function playSamij() {
+  var audio = new Audio('./assets/audio/samij_aziz.mp3');
   audio.play();
 }
 
