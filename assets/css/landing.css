@@ -65,7 +65,7 @@ body {
       rgba(0, 0, 0, 0.4),
       rgba(0, 0, 0, 0.4)
     ),
-    url('../images/class.jpg');
+    url('../images/class.webp');
 }
 .slideshow li:nth-child(2) {
   background-image: linear-gradient(
@@ -73,7 +73,7 @@ body {
       rgba(0, 0, 0, 0.4),
       rgba(0, 0, 0, 0.4)
     ),
-    url('../images/winners_edit.png');
+    url('../images/winners_edit.webp');
   animation-delay: 10s;
 }
 .slideshow li:nth-child(3) {
@@ -82,7 +82,7 @@ body {
       rgba(0, 0, 0, 0.4),
       rgba(0, 0, 0, 0.4)
     ),
-    url('../images/low_core_class_1.png');
+    url('../images/low_core_class_1.webp');
   animation-delay: 20s;
 }
 .slideshow li:nth-child(4) {
@@ -91,7 +91,7 @@ body {
       rgba(0, 0, 0, 0.2),
       rgba(0, 0, 0, 0.2)
     ),
-    url('../images/low_core_class_2.png');
+    url('../images/low_core_class_2.webp');
   animation-delay: 30s;
 }
 .slideshow li:nth-child(5) {
@@ -100,7 +100,7 @@ body {
       rgba(0, 0, 0, 0.2),
       rgba(0, 0, 0, 0.2)
     ),
-    url('../images/low_core_class_3_alt.png');
+    url('../images/low_core_class_3_alt.webp');
   animation-delay: 40s;
 }
 
