@@ -152,7 +152,7 @@ const studentData = [
     // img: 'https://th.bing.com/th/id/R.ff061c5054e6a32b783555964a2f3e54?rik=zSvwCku7bIGOhw&riu=http%3a%2f%2fpre03.deviantart.net%2fff82%2fth%2fpre%2fi%2f2013%2f059%2fe%2f1%2fmoustache_iron_man_by_future_parker-d5whjo5.png&ehk=go%2brbgkl2ZSQGWklblsClGiL%2ferEhzZAj1DPUR27hNk%3d&risl=&pid=ImgRaw&r=0',
     img: './assets/images/iron_man.webp',
     bio: 'Do you like my moustache?',
-    button_id: '',
+    button_id: 'bader',
   },
   {
     id: 14,
@@ -174,7 +174,7 @@ const studentData = [
     country: 'Brazil',
     img: 'https://media.istockphoto.com/vectors/brazil-sport-fan-with-flag-and-horn-vector-id486835873?k=20&m=486835873&s=612x612&w=0&h=3cN_3NL6sDw3dMJkg9BSu6Jed1ATbh2rA_QhQ0TbzXQ=',
     bio: 'I love Brazil!',
-    button_id: '',
+    button_id: 'joao',
   },
 ];
 
@@ -239,6 +239,8 @@ var button5 = document.getElementById('jenny-btn');
 var button6 = document.getElementById('abduladolf-btn');
 var button7 = document.getElementById('michelle-btn');
 var button8 = document.getElementById('yazeed-btn');
+var button9 = document.getElementById('joao-btn');
+var button10 = document.getElementById('bader-btn');
 
 // Event Listeners
 trombone.addEventListener('click', playTrombone);
@@ -254,6 +256,8 @@ button5.addEventListener('click', playJenny);
 button6.addEventListener('click', playAbduladolf);
 button7.addEventListener('click', playMichelle);
 button8.addEventListener('click', playYazeed);
+button9.addEventListener('click', playJoao);
+button10.addEventListener('click', playBader);
 
 // Functions
 function playTrombone() {
@@ -318,6 +322,16 @@ function playMichelle() {
 
 function playYazeed() {
   var audio = new Audio('./assets/audio/yazeed.mp3');
+  audio.play();
+}
+
+function playJoao() {
+  var audio = new Audio('./assets/audio/brazil_edit.mp3');
+  audio.play();
+}
+
+function playBader() {
+  var audio = new Audio('./assets/audio/bader.mp3');
   audio.play();
 }
 
