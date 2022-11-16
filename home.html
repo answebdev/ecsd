@@ -17,6 +17,8 @@
     <meta property="og:url" content="https://ecsd.vercel.app/home.html" />
     <meta property="og:title" content="ECSD Low Core Class" />
     <meta property="og:description" content="Welcome to the best class." />
+    <!-- Link to Moment.js -->
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.27.0/moment.min.js"></script>
     <!-- Link to Font Awesome 6 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
         integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
@@ -41,6 +43,10 @@
             </button>
         </div>
     </nav>
+
+    <div style="background-color: #f4f4f4; color: #121212;" class="alert alert-light time-date-container" role="alert">
+        <strong>San Diego, CA: </strong><span id='date-and-time'></span>
+    </div>
 
     <div class="container">
 
@@ -120,7 +126,26 @@
             </div>
             <!-- End Karl Video Modal -->
 
-            <div class="students"></div>
+            <br />
+            <br />
+
+            <div>
+                <h2 class="heading current">Current Students</h2>
+                <p class="sub-heading current-sub">Current students and those who have left the school at this level.
+                </p>
+            </div>
+
+            <div class="students_current"></div>
+
+            <br />
+            <br />
+
+            <div>
+                <h2 class="heading graduate">Former Students</h2>
+                <p class="sub-heading graduate-sub">Students who have graduated and moved up to the next level.</p>
+            </div>
+
+            <div class="students_graduate"></div>
 
             <!-- Back to Top Button -->
             <div style="display:flex; justify-content:center;margin-top:40px;">

@@ -39,7 +39,8 @@ body {
   justify-content: space-evenly;
 }
 
-.students {
+.students_current,
+.students_graduate {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
@@ -98,6 +99,23 @@ button {
   overflow: hidden;
   transition: max-height 0.2s ease-out;
   line-height: 1.8;
+}
+
+.time-date-text {
+  color: var(--darkMode) !important;
+  font-size: 16px;
+  margin: 0;
+}
+
+.dark-mode-time-date {
+  background-color: var(--darkMode) !important;
+  color: #f4f4f4 !important;
+  transition: 0.5s;
+}
+
+.alert-light {
+  --bs-alert-border-color: none;
+  transition: 0.5s;
 }
 
 /* Orignal CSS for Details Accordion section created with Vanilla JavaScript.

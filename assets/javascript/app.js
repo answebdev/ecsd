@@ -18,6 +18,7 @@ const studentData = [
     img: './assets/images/kenny.webp',
     bio: 'Homework loves you.',
     button_id: 'abduladolf',
+    status: 'active',
   },
   {
     id: 2,
@@ -29,17 +30,19 @@ const studentData = [
     img: 'https://i1.sndcdn.com/artworks-000379239159-qi6n15-t500x500.jpg',
     bio: 'Likes bread, cheese, eggs (sometimes chicken) for breakfast.',
     button_id: 'amin',
+    status: 'active',
   },
   {
     id: 3,
-    name: 'Mutaz',
-    likes: 'Hanging out with friends',
-    dislikes: 'Nosy people',
+    name: 'Rashed',
+    likes: 'n/a',
+    dislikes: 'n/a',
     interesting_fact: '',
     country: 'Saudi Arabia',
-    img: 'https://entertainment.time.com/wp-content/uploads/sites/3/2013/05/fictioninfluence_list_homersimpson.jpg',
-    bio: 'Cleans his ears every day. Sleeps while Papa Mutaz cleans his room.',
-    button_id: 'mutaz',
+    img: 'https://preview.redd.it/erimg7yicns41.jpg?auto=webp&s=6f1d86315cef37dc5f8d71edb613271614b28604',
+    bio: 'First graduate to the next level.',
+    button_id: '',
+    status: 'graduate',
   },
   {
     id: 4,
@@ -51,6 +54,7 @@ const studentData = [
     img: 'https://i1.sndcdn.com/avatars-000022201824-zd09tb-t500x500.jpg',
     bio: "Sometimes Papa Mutaz. Sometimes sneaks in to clean Mutaz's room.",
     button_id: 'aziz',
+    status: 'active',
   },
   {
     id: 5,
@@ -62,6 +66,7 @@ const studentData = [
     img: 'https://us.123rf.com/450wm/mickallnice/mickallnice1705/mickallnice170500002/77255576-kid-doing-a-homework-vector-and-illustration.jpg?ver=6',
     bio: 'Loves doing homework every day, but also has homework phobia.',
     button_id: 'nasser',
+    status: 'active',
   },
   {
     id: 6,
@@ -74,6 +79,7 @@ const studentData = [
     img: './assets/images/jenny-pumpkin-alt.webp',
     bio: 'Wants to go on vacation. Loves taking pictures of the sunset.',
     button_id: 'jenny',
+    status: 'active',
   },
   {
     id: 7,
@@ -85,6 +91,7 @@ const studentData = [
     img: 'https://ih1.redbubble.net/image.986147108.2204/pp,840x830-pad,1000x1000,f8f8f8.jpg',
     bio: 'Bringer of donuts.',
     button_id: '',
+    status: 'active',
   },
   {
     id: 8,
@@ -96,17 +103,19 @@ const studentData = [
     img: 'https://i.pinimg.com/originals/dd/0a/7b/dd0a7b1b9cbf38774f80e4b9042608ea.jpg',
     bio: 'Bringer of himself.',
     button_id: '',
+    status: 'active',
   },
   {
     id: 9,
-    name: 'Rashed',
-    likes: 'n/a',
-    dislikes: 'n/a',
+    name: 'Mutaz',
+    likes: 'Hanging out with friends',
+    dislikes: 'Nosy people',
     interesting_fact: '',
     country: 'Saudi Arabia',
-    img: 'https://preview.redd.it/erimg7yicns41.jpg?auto=webp&s=6f1d86315cef37dc5f8d71edb613271614b28604',
-    bio: 'First graduate to the next level.',
-    button_id: '',
+    img: 'https://entertainment.time.com/wp-content/uploads/sites/3/2013/05/fictioninfluence_list_homersimpson.jpg',
+    bio: 'Cleans his ears every day. Sleeps while Papa Mutaz cleans his room.',
+    button_id: 'mutaz',
+    status: 'graduate',
   },
   {
     id: 10,
@@ -118,6 +127,7 @@ const studentData = [
     img: 'https://static.vecteezy.com/system/resources/previews/006/922/012/original/cute-boy-with-pug-dog-and-corgi-dog-cartoon-icon-illustration-animal-people-icon-concept-isolated-premium-vector.jpg',
     bio: 'Has two cute chihuahuas and loves baseball.',
     button_id: '',
+    status: 'graduate',
   },
   {
     id: 11,
@@ -129,18 +139,20 @@ const studentData = [
     img: 'https://us.123rf.com/450wm/esheluxina/esheluxina1811/esheluxina181100153/127708976-business-and-finance-flat-style-vector-illustration-clipart-.jpg?ver=6',
     bio: 'Comes from Taiwan and works as an accountant.',
     button_id: 'michelle',
+    status: 'active',
   },
   {
     id: 12,
     name: 'Yazeed',
     likes: 'Pasta and waka waka',
-    dislikes: 'Cold weather',
+    dislikes: 'Bananas and cold weather',
     interesting_fact: '',
     country: 'Saudi Arabia',
     // img: 'https://clickclack.es/WebRoot/Store14/Shops/536773c5-8a25-42ea-8b30-6260eeefd1b5/629B/05BA/0602/3EEA/652D/0A48/3559/1587/_KAI9022_ml.JPG',
     img: './assets/images/yazeed.webp',
     bio: 'My name is Yazeed. Waka waka waka.',
     button_id: 'yazeed',
+    status: 'active',
   },
   {
     id: 13,
@@ -153,6 +165,7 @@ const studentData = [
     img: './assets/images/iron_man.webp',
     bio: 'Do you like my moustache?',
     button_id: 'bader',
+    status: 'active',
   },
   {
     id: 14,
@@ -164,6 +177,7 @@ const studentData = [
     img: './assets/images/viviana.webp',
     bio: 'Nice to meet you!',
     button_id: '',
+    status: 'active',
   },
   {
     id: 15,
@@ -175,6 +189,7 @@ const studentData = [
     img: 'https://media.istockphoto.com/vectors/brazil-sport-fan-with-flag-and-horn-vector-id486835873?k=20&m=486835873&s=612x612&w=0&h=3cN_3NL6sDw3dMJkg9BSu6Jed1ATbh2rA_QhQ0TbzXQ=',
     bio: 'I love Brazil!',
     button_id: 'joao',
+    status: 'active',
   },
 ];
 
@@ -193,10 +208,11 @@ const studentData = [
 
 // How to import a JSON file in JavaScript (ES6 Modules): https://bobbyhadz.com/blog/javascript-import-json-file
 
-const studentContainer = document.querySelector('.students');
+const studentContainer = document.querySelector('.students_current');
 const studentList = studentData
   .map((student) => {
-    return `
+    return student.status === 'active'
+      ? `
         <div class="row">
             <div class="col-sm-4">
                 <div class="card" style="width: 18rem;">
@@ -219,11 +235,45 @@ const studentList = studentData
                 </div>
             </div>
         </div>
-        `;
+        `
+      : null;
+  })
+  .join('');
+
+const studentContainerGraduate = document.querySelector('.students_graduate');
+const studentListGraduate = studentData
+  .map((student) => {
+    return student.status === 'graduate'
+      ? `
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <img src=${student.img} class="card-img-top" alt=${student.name}>
+                        <h5 style="margin-top: 10px" class="card-title">${student.name}</h5>
+                        <p class="card-text">${student.bio}</p>
+                        <button class="accordion">DETAILS</button>
+                        <div class="panel">
+                          <p>
+                            <strong>Country: </strong>${student.country}<br />
+                            <strong>Likes: </strong>${student.likes}<br />
+                            <strong>Dislikes: </strong>${student.dislikes}
+                          </p>
+                        </div>
+                        <div>
+                            <button id="${student.button_id}-btn" type="button" class="btn btn-dark">Listen <i class="fa-solid fa-circle-play"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        `
+      : null;
   })
   .join('');
 
 studentContainer.innerHTML = studentList;
+studentContainerGraduate.innerHTML = studentListGraduate;
 
 // Selectors
 var trombone = document.getElementById('trombone-btn');
@@ -311,7 +361,7 @@ function playJenny() {
 }
 
 function playAbduladolf() {
-  var audio = new Audio('./assets/audio/abduladolf.mp3');
+  var audio = new Audio('./assets/audio/smurfs_theme_edit.mp3');
   audio.play();
 }
 
@@ -349,6 +399,10 @@ function darkMode() {
 
   document.querySelector('.heading').classList.toggle('dark-mode-heading');
   document.querySelector('.sub-heading').classList.toggle('dark-mode-heading');
+  document.querySelector('.current').classList.toggle('dark-mode-heading');
+  document.querySelector('.current-sub').classList.toggle('dark-mode-heading');
+  document.querySelector('.graduate').classList.toggle('dark-mode-heading');
+  document.querySelector('.graduate-sub').classList.toggle('dark-mode-heading');
   document
     .querySelector('.sub-heading-text')
     .classList.toggle('dark-mode-heading');
@@ -382,6 +436,11 @@ function darkMode() {
   var accordionPanels = document.querySelectorAll('.panel');
   accordionPanels.forEach((accordionPanel) => {
     accordionPanel.classList.toggle('dark-mode-accordion');
+  });
+
+  var timeAndDate = document.querySelectorAll('.time-date-container');
+  timeAndDate.forEach((timeDate) => {
+    timeDate.classList.toggle('dark-mode-time-date');
   });
 }
 
@@ -426,3 +485,19 @@ function backToTop() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+// Current Time and Date: Moment.js
+var update = function () {
+  date = moment();
+  dateAndTime.html(date.format('dddd, MMMM Do YYYY, h:mm:ss a'));
+};
+
+$(document).ready(function () {
+  dateAndTime = $('#date-and-time');
+  update();
+  setInterval(update, 1000);
+});
+
+// console.log(
+//   'The current time and date is ' + moment().format('MMMM Do YYYY, h:mm:ss a')
+// );
