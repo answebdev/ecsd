@@ -279,7 +279,9 @@ studentContainerGraduate.innerHTML = studentListGraduate;
 var trombone = document.getElementById('trombone-btn');
 var woohoo = document.getElementById('woohoo-btn');
 var charge = document.getElementById('charge-btn');
+var focusAudio = document.getElementById('focus-btn');
 var laugh = document.getElementById('laugh-btn');
+var wocka = document.getElementById('wocka-btn');
 var samij = document.getElementById('samij-btn');
 var button1 = document.getElementById('amin-btn');
 var button2 = document.getElementById('mutaz-btn');
@@ -297,6 +299,8 @@ trombone.addEventListener('click', playTrombone);
 woohoo.addEventListener('click', playWoohoo);
 charge.addEventListener('click', playCharge);
 laugh.addEventListener('click', playLaugh);
+focusAudio.addEventListener('click', playFocus);
+wocka.addEventListener('click', playWocka);
 samij.addEventListener('click', playSamij);
 button1.addEventListener('click', playAmin);
 button2.addEventListener('click', playMutaz);
@@ -327,6 +331,16 @@ function playCharge() {
 
 function playLaugh() {
   var audio = new Audio('./assets/audio/HomerLaugh1.mp3');
+  audio.play();
+}
+
+function playFocus() {
+  var audio = new Audio('./assets/audio/focus_alt.mp3');
+  audio.play();
+}
+
+function playWocka() {
+  var audio = new Audio('./assets/audio/wocka.mp3');
   audio.play();
 }
 
