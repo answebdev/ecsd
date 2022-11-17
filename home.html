@@ -56,82 +56,102 @@
             <h4 class="sub-heading">Welcome to the best class!</h4>
             <p class="sub-heading-text">Sometimes <em>samij</em>, sometimes <em>nagis</em>.</p>
 
-            <br />
+            <div style="margin: auto; width: 50%;">
+                <div style="background-color: #f4f4f4;" class="accordion accordion-flush alert-light"
+                    id="accordionFlushExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header accordion-card-button" id="flush-headingOne">
+                            <button class="accordion-button accordion-btn collapsed" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                aria-controls="flush-collapseOne">Buttons
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div style="padding: 30px;" class="accordion-body">
+                                <div style="display:flex; justify-content: center; flex-wrap: wrap; gap: 10px;">
+                                    <button id="trombone-btn" type="button" class="btn btn-danger">Incorrect <i
+                                            class="fa-regular fa-face-frown"></i></button>
+                                    <button id="charge-btn" type="button" class="btn btn-dark">Charge! <i
+                                            class="fa-solid fa-rocket"></i></button>
+                                    <button id="woohoo-btn" type="button" class="btn btn-success">Correct <i
+                                            class="fa-regular fa-circle-check"></i></button>
+                                    <button id="laugh-btn" type="button" class="btn btn-success">Laugh <i
+                                            class="fa-regular fa-face-laugh"></i></button>
+                                    <button id="samij-btn" type="button" class="btn btn-danger">Samij <i
+                                            class="fa-regular fa-face-grin-tongue-wink"></i></button>
 
-            <div style="display:flex; justify-content: center; margin-bottom: 20px; flex-wrap: wrap; gap: 10px;">
-                <button id="trombone-btn" type="button" class="btn btn-danger">Incorrect <i
-                        class="fa-regular fa-face-frown"></i></button>
-                <button id="charge-btn" type="button" class="btn btn-dark">Charge! <i
-                        class="fa-solid fa-rocket"></i></button>
-                <button id="woohoo-btn" type="button" class="btn btn-success">Correct <i
-                        class="fa-regular fa-circle-check"></i></button>
-                <button id="laugh-btn" type="button" class="btn btn-success">Laugh <i
-                        class="fa-regular fa-face-laugh"></i></button>
-                <button id="samij-btn" type="button" class="btn btn-danger">Samij <i
-                        class="fa-regular fa-face-grin-tongue-wink"></i></button>
-            </div>
+                                    <button id="focus-btn" type="button" class="btn btn-primary">Focus <i
+                                            class="fa-solid fa-eye"></i></button>
 
-            <div style="display:flex; justify-content: center; margin-bottom: 20px; flex-wrap: wrap; gap: 10px;">
-                <button id="focus-btn" type="button" class="btn btn-primary">Focus <i
-                        class="fa-solid fa-eye"></i></button>
+                                    <button id="wocka-btn" type="button" class="btn btn-success">Wocka <i
+                                            class="fa-regular fa-face-grin-tongue"></i>
+                                    </button>
 
-                <button id="wocka-btn" type="button" class="btn btn-success">Wocka <i
-                        class="fa-regular fa-face-grin-tongue"></i>
-                </button>
+                                    <!-- Karl Video Modal - Scroll Down to For Bootstrap 5 here I share what worked for me: https://stackoverflow.com/questions/18622508/bootstrap-3-and-youtube-in-modal -->
+                                    <button class="btn btn-primary" data-bs-toggle="modal"
+                                        data-tagVideo="https://www.youtube.com/watch?v=SJxcQt6nCC0"
+                                        data-bs-target="#videoModal">Diary <i class="fa-solid fa-book"></i>
+                                    </button>
 
-                <!-- Karl Video Modal - Scroll Down to For Bootstrap 5 here I share what worked for me: https://stackoverflow.com/questions/18622508/bootstrap-3-and-youtube-in-modal -->
-                <button class="btn btn-primary" data-bs-toggle="modal"
-                    data-tagVideo="https://www.youtube.com/watch?v=SJxcQt6nCC0" data-bs-target="#videoModal">Diary <i
-                        class="fa-solid fa-book"></i>
-                </button>
+                                    <button class="btn btn-primary" data-bs-toggle="modal"
+                                        data-tagVideo="https://www.youtube.com/watch?v=V-9_U0eQMpE"
+                                        data-bs-target="#videoModal2">Diary <i class="fa-solid fa-book"></i>
+                                    </button>
+                                </div>
 
-                <button class="btn btn-primary" data-bs-toggle="modal"
-                    data-tagVideo="https://www.youtube.com/watch?v=V-9_U0eQMpE" data-bs-target="#videoModal2">Diary <i
-                        class="fa-solid fa-book"></i>
-                </button>
-            </div>
+                                <div class="modal fade" id="videoModal" data-bs-backdrop="static"
+                                    data-bs-keyboard="false" tabindex="-1" aria-labelledby="videoModalLabel"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title">Karl Introduces His Diary</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="ratio ratio-16x9">
+                                                    <iframe width="560" height="315"
+                                                        src="https://www.youtube.com/embed/SJxcQt6nCC0"
+                                                        title="YouTube video player" frameborder="0"
+                                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                        allowfullscreen>
+                                                    </iframe>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
 
-            <div class="modal fade" id="videoModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-                aria-labelledby="videoModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title">Karl Introduces His Diary</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <div class="ratio ratio-16x9">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/SJxcQt6nCC0"
-                                    title="YouTube video player" frameborder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                    allowfullscreen>
-                                </iframe>
+                                <div class="modal fade" id="videoModal2" data-bs-backdrop="static"
+                                    data-bs-keyboard="false" tabindex="-1" aria-labelledby="videoModalLabel"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title">Karl's Diary: Suzanne's Birthday</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="ratio ratio-16x9">
+                                                    <iframe width="560" height="315"
+                                                        src="https://www.youtube.com/embed/V-9_U0eQMpE"
+                                                        title="YouTube video player" frameborder="0"
+                                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                        allowfullscreen></iframe>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Karl Video Modal -->
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <div class="modal fade" id="videoModal2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-                aria-labelledby="videoModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title">Karl's Diary: Suzanne's Birthday</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <div class="ratio ratio-16x9">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/V-9_U0eQMpE"
-                                    title="YouTube video player" frameborder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                    allowfullscreen></iframe>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- End Karl Video Modal -->
 
             <br />
             <br />

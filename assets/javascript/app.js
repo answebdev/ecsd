@@ -40,7 +40,7 @@ const studentData = [
     interesting_fact: '',
     country: 'Saudi Arabia',
     img: 'https://preview.redd.it/erimg7yicns41.jpg?auto=webp&s=6f1d86315cef37dc5f8d71edb613271614b28604',
-    bio: 'First graduate to the next level.',
+    bio: 'First graduate to move up to the next level.',
     button_id: '',
     status: 'graduate',
   },
@@ -112,8 +112,9 @@ const studentData = [
     dislikes: 'Nosy people',
     interesting_fact: '',
     country: 'Saudi Arabia',
-    img: 'https://entertainment.time.com/wp-content/uploads/sites/3/2013/05/fictioninfluence_list_homersimpson.jpg',
-    bio: 'Cleans his ears every day. Sleeps while Papa Mutaz cleans his room.',
+    // img: 'https://entertainment.time.com/wp-content/uploads/sites/3/2013/05/fictioninfluence_list_homersimpson.jpg',
+    img: './assets/images/papa-mutaz.webp',
+    bio: 'In charge of break time. Cleans his ears every day.',
     button_id: 'mutaz',
     status: 'graduate',
   },
@@ -425,6 +426,16 @@ function darkMode() {
   var cards = document.querySelectorAll('.card-body');
   cards.forEach((card) => {
     card.classList.toggle('dark-mode-card');
+  });
+
+  var buttonCard = document.querySelectorAll('.accordion-body');
+  buttonCard.forEach((buttonC) => {
+    buttonC.classList.toggle('dark-mode-button-card');
+  });
+
+  var accordionMainButton = document.querySelectorAll('.accordion-btn');
+  accordionMainButton.forEach((accordionMainBtn) => {
+    accordionMainBtn.classList.toggle('dark-mode-main-btn');
   });
 
   var cardTexts = document.querySelectorAll('.card-text');

@@ -24,6 +24,20 @@ body {
   transition: 0.5s;
 }
 
+.dark-mode-button-card {
+  background-color: var(--darkMode);
+  color: #f4f4f4 !important;
+  transition: 0.5s;
+  border: 1px solid #f4f4f4;
+}
+
+.dark-mode-main-btn {
+  background-color: var(--darkMode) !important;
+  color: #f4f4f4 !important;
+  border: 1px solid #f4f4f4;
+  transition: 0.5s;
+}
+
 #mode-btn {
   box-shadow: none;
   border-radius: 50%;
