@@ -38,6 +38,11 @@ body {
   transition: 0.5s;
 }
 
+.dark-mode-disabled-btn {
+  color: #787878 !important;
+  background-color: #3c3c3c !important;
+}
+
 #mode-btn {
   box-shadow: none;
   border-radius: 50%;

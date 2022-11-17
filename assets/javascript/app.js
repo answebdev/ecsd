@@ -218,8 +218,12 @@ const studentList = studentData
             <div class="col-sm-4">
                 <div class="card" style="width: 18rem;">
                     <div class="card-body">
-                        <img src=${student.img} class="card-img-top" alt=${student.name}>
-                        <h5 style="margin-top: 10px" class="card-title">${student.name}</h5>
+                        <img src=${student.img} class="card-img-top" alt=${
+          student.name
+        }>
+                        <h5 style="margin-top: 10px" class="card-title">${
+                          student.name
+                        }</h5>
                         <p class="card-text">${student.bio}</p>
                         <button class="accordion">DETAILS</button>
                         <div class="panel">
@@ -230,7 +234,23 @@ const studentList = studentData
                           </p>
                         </div>
                         <div>
-                            <button id="${student.button_id}-btn" type="button" class="btn btn-dark">Listen <i class="fa-solid fa-circle-play"></i></button>
+                        ${
+                          student.button_id === ''
+                            ? `<button
+                              type='button'
+                              class='btn btn-dark disabled-btn'
+                              disabled
+                            >
+                              Listen <i class='fa-solid fa-circle-play'></i>
+                            </button>`
+                            : `<button
+                              id='${student.button_id}-btn'
+                              type='button'
+                              class='btn btn-dark'
+                            >
+                              Listen <i class='fa-solid fa-circle-play'></i>
+                            </button>`
+                        }
                         </div>
                     </div>
                 </div>
@@ -250,8 +270,12 @@ const studentListGraduate = studentData
             <div class="col-sm-4">
                 <div class="card" style="width: 18rem;">
                     <div class="card-body">
-                        <img src=${student.img} class="card-img-top" alt=${student.name}>
-                        <h5 style="margin-top: 10px" class="card-title">${student.name}</h5>
+                        <img src=${student.img} class="card-img-top" alt=${
+          student.name
+        }>
+                        <h5 style="margin-top: 10px" class="card-title">${
+                          student.name
+                        }</h5>
                         <p class="card-text">${student.bio}</p>
                         <button class="accordion">DETAILS</button>
                         <div class="panel">
@@ -262,8 +286,24 @@ const studentListGraduate = studentData
                           </p>
                         </div>
                         <div>
-                            <button id="${student.button_id}-btn" type="button" class="btn btn-dark">Listen <i class="fa-solid fa-circle-play"></i></button>
-                        </div>
+                            ${
+                              student.button_id === ''
+                                ? `<button
+                                  type='button'
+                                  class='btn btn-dark disabled-btn'
+                                  disabled
+                                >
+                                  Listen <i class='fa-solid fa-circle-play'></i>
+                                </button>`
+                                : `<button
+                                  id='${student.button_id}-btn'
+                                  type='button'
+                                  class='btn btn-dark'
+                                >
+                                  Listen <i class='fa-solid fa-circle-play'></i>
+                                </button>`
+                            }
+                            </div>
                     </div>
                 </div>
             </div>
@@ -467,6 +507,11 @@ function darkMode() {
   timeAndDate.forEach((timeDate) => {
     timeDate.classList.toggle('dark-mode-time-date');
   });
+
+  var disabledBtn = document.querySelectorAll('.disabled-btn');
+  disabledBtn.forEach((dBtn) => {
+    dBtn.classList.toggle('dark-mode-disabled-btn');
+  });
 }
 
 // Accordion
@@ -526,3 +571,31 @@ $(document).ready(function () {
 // console.log(
 //   'The current time and date is ' + moment().format('MMMM Do YYYY, h:mm:ss a')
 // );
+
+// Weather Information
+const weatherResults = document.querySelector('.weather');
+
+fetch(
+  'https://api.openweathermap.org/data/2.5/weather?q=San+Diego&appid=016af1d0bf77f0007d077f39dc84b387&units=imperial'
+)
+  .then((res) => res.json())
+  .then(function (data) {
+    // let weatherData = data.results;
+
+    console.log(data);
+    console.log('City: ' + data.name);
+    console.log('Current Temperature: ' + data.main.temp + '° F');
+    console.log('Description: ' + data.weather[0].main);
+
+    // return Object.entries(data).map(function () {
+    // return data.map(function (item) {
+    return (weatherResults.innerHTML += `
+                <div class='weather'>
+                    <p>Current temperature in ${data.name}: ${data.main.temp}° F | ${data.weather[0].main}</p>
+                </div>
+            `);
+  });
+// })
+// .catch(function (error) {
+//   console.log(error);
+// });
