@@ -171,9 +171,9 @@ const studentData = [
   {
     id: 14,
     name: 'Viviana',
-    likes: '',
-    dislikes: '',
-    interesting_fact: '',
+    likes: 'n/a',
+    dislikes: 'n/a',
+    interesting_fact: 'n/a',
     country: 'Colombia',
     img: './assets/images/viviana.webp',
     bio: 'Nice to meet you!',
