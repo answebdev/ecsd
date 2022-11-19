@@ -583,22 +583,16 @@ fetch(
 )
   .then((res) => res.json())
   .then(function (data) {
-    // let weatherData = data.results;
 
     console.log(data);
     console.log('City: ' + data.name);
     console.log('Current Temperature: ' + data.main.temp + '° F');
     console.log('Description: ' + data.weather[0].main);
 
-    // return Object.entries(data).map(function () {
-    // return data.map(function (item) {
     return (weatherResults.innerHTML += `
                 <div class='weather'>
                     <p>Current temperature in ${data.name}: ${data.main.temp}° F | ${data.weather[0].main}</p>
                 </div>
             `);
   });
-// })
-// .catch(function (error) {
-//   console.log(error);
-// });
+
