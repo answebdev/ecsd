@@ -104,7 +104,7 @@ const studentData = [
     // img: 'https://i.pinimg.com/originals/dd/0a/7b/dd0a7b1b9cbf38774f80e4b9042608ea.jpg',
     // img: './assets/images/saleh.webp',
     img: './assets/images/saleh04.png',
-    bio: 'Bringer of himself and Kahoot winner.',
+    bio: 'Fresh new haircut and Kahoot winner.',
     button_id: '',
     status: 'active',
   },
