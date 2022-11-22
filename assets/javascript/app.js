@@ -103,7 +103,7 @@ const studentData = [
     country: 'Saudi Arabia',
     // img: 'https://i.pinimg.com/originals/dd/0a/7b/dd0a7b1b9cbf38774f80e4b9042608ea.jpg',
     // img: './assets/images/saleh.webp',
-    img: './assets/images/saleh04.png',
+    img: './assets/images/saleh04.webp',
     bio: 'Fresh new haircut and Kahoot winner.',
     button_id: '',
     status: 'active',
@@ -583,7 +583,6 @@ fetch(
 )
   .then((res) => res.json())
   .then(function (data) {
-
     console.log(data);
     console.log('City: ' + data.name);
     console.log('Current Temperature: ' + data.main.temp + '° F');
@@ -595,4 +594,3 @@ fetch(
                 </div>
             `);
   });
-
