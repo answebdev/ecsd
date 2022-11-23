@@ -576,21 +576,21 @@ $(document).ready(function () {
 // );
 
 // Weather Information
-const weatherResults = document.querySelector('.weather');
+// const weatherResults = document.querySelector('.weather');
 
-fetch(
-  'https://api.openweathermap.org/data/2.5/weather?q=San+Diego&appid=016af1d0bf77f0007d077f39dc84b387&units=imperial'
-)
-  .then((res) => res.json())
-  .then(function (data) {
-    console.log(data);
-    console.log('City: ' + data.name);
-    console.log('Current Temperature: ' + data.main.temp + '° F');
-    console.log('Description: ' + data.weather[0].main);
+// fetch(
+//   'https://api.openweathermap.org/data/2.5/weather?q=San+Diego&appid=016af1d0bf77f0007d077f39dc84b387&units=imperial'
+// )
+//   .then((res) => res.json())
+//   .then(function (data) {
+//     console.log(data);
+//     console.log('City: ' + data.name);
+//     console.log('Current Temperature: ' + data.main.temp + '° F');
+//     console.log('Description: ' + data.weather[0].main);
 
-    return (weatherResults.innerHTML += `
-                <div class='weather'>
-                    <p>Current temperature in ${data.name}: ${data.main.temp}° F | ${data.weather[0].main}</p>
-                </div>
-            `);
-  });
+//     return (weatherResults.innerHTML += `
+//                 <div class='weather'>
+//                     <p>Current temperature in ${data.name}: ${data.main.temp}° F | ${data.weather[0].main}</p>
+//                 </div>
+//             `);
+//   });
