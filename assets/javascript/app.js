@@ -4,6 +4,7 @@
 // Fanfare: https://free-loops.com/7590-charge-fanfare-mp3.html
 // Laughs: https://mixkit.co/free-sound-effects/laugh/
 // Simpsons Laughs: https://www.findsounds.com/ISAPI/search.dll?keywords=Simpsons
+// DJ Record Scratch: https://elements.envato.com/dj-record-scratch-3-9FRQEAU?utm_source=mixkit&utm_medium=referral&utm_campaign=elements_mixkit_cs_sfx_tag&_ga=2.51709673.1700326721.1670515955-455592564.1670515955
 
 // Data
 const studentData = [
@@ -326,6 +327,7 @@ var charge = document.getElementById('charge-btn');
 var focusAudio = document.getElementById('focus-btn');
 var laugh = document.getElementById('laugh-btn');
 var wocka = document.getElementById('wocka-btn');
+var scratch = document.getElementById('scratch-btn');
 var samij = document.getElementById('samij-btn');
 var button1 = document.getElementById('amin-btn');
 var button2 = document.getElementById('mutaz-btn');
@@ -345,6 +347,7 @@ charge.addEventListener('click', playCharge);
 laugh.addEventListener('click', playLaugh);
 focusAudio.addEventListener('click', playFocus);
 wocka.addEventListener('click', playWocka);
+scratch.addEventListener('click', playScratch);
 samij.addEventListener('click', playSamij);
 button1.addEventListener('click', playAmin);
 button2.addEventListener('click', playMutaz);
@@ -365,6 +368,11 @@ function playTrombone() {
 
 function playWoohoo() {
   var audio = new Audio('./assets/audio/woohoo.mp3');
+  audio.play();
+}
+
+function playScratch() {
+  var audio = new Audio('./assets/audio/record-scratch.mp3');
   audio.play();
 }
 
@@ -576,21 +584,21 @@ $(document).ready(function () {
 // );
 
 // Weather Information
-// const weatherResults = document.querySelector('.weather');
+const weatherResults = document.querySelector('.weather');
 
-// fetch(
-//   'https://api.openweathermap.org/data/2.5/weather?q=San+Diego&appid=016af1d0bf77f0007d077f39dc84b387&units=imperial'
-// )
-//   .then((res) => res.json())
-//   .then(function (data) {
-//     console.log(data);
-//     console.log('City: ' + data.name);
-//     console.log('Current Temperature: ' + data.main.temp + '° F');
-//     console.log('Description: ' + data.weather[0].main);
+fetch(
+  'https://api.openweathermap.org/data/2.5/weather?q=San+Diego&appid=016af1d0bf77f0007d077f39dc84b387&units=imperial'
+)
+  .then((res) => res.json())
+  .then(function (data) {
+    console.log(data);
+    console.log('City: ' + data.name);
+    console.log('Current Temperature: ' + data.main.temp + '° F');
+    console.log('Description: ' + data.weather[0].main);
 
-//     return (weatherResults.innerHTML += `
-//                 <div class='weather'>
-//                     <p>Current temperature in ${data.name}: ${data.main.temp}° F | ${data.weather[0].main}</p>
-//                 </div>
-//             `);
-//   });
+    return (weatherResults.innerHTML += `
+                <div class='weather'>
+                    <p>Current temperature in ${data.name}: ${data.main.temp}° F | ${data.weather[0].main}</p>
+                </div>
+            `);
+  });
