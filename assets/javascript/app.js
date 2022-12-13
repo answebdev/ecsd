@@ -52,7 +52,7 @@ const studentData = [
     dislikes: 'No after parties',
     interesting_fact: '',
     country: 'Saudi Arabia',
-    img: './assets/images/aziz_mexico_01.webp',
+    img: './assets/images/azaz_mr_mexico.webp',
     bio: "Sometimes Mr. Mexico. Sometimes sneaks in to clean Mutaz's room.",
     button_id: 'aziz',
     status: 'active',
