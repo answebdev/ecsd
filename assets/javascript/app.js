@@ -93,7 +93,7 @@ const studentData = [
     img: 'https://ih1.redbubble.net/image.986147108.2204/pp,840x830-pad,1000x1000,f8f8f8.jpg',
     bio: 'Bringer of donuts.',
     button_id: '',
-    status: 'graduate',
+    status: 'active',
   },
   {
     id: 8,
@@ -144,7 +144,7 @@ const studentData = [
     img: 'https://us.123rf.com/450wm/esheluxina/esheluxina1811/esheluxina181100153/127708976-business-and-finance-flat-style-vector-illustration-clipart-.jpg?ver=6',
     bio: 'Comes from Taiwan and works as an accountant.',
     button_id: 'michelle',
-    status: 'graduate',
+    status: 'active',
   },
   {
     id: 12,
