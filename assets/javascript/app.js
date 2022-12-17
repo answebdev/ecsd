@@ -52,7 +52,7 @@ const studentData = [
     dislikes: 'No after parties',
     interesting_fact: '',
     country: 'Saudi Arabia',
-    img: './assets/images/azaz_mr_mexico.webp',
+    img: './assets/images/aziz_formal.webp',
     bio: "Sometimes Mr. Mexico. Sometimes sneaks in to clean Mutaz's room.",
     button_id: 'aziz',
     status: 'active',
@@ -93,7 +93,7 @@ const studentData = [
     img: 'https://ih1.redbubble.net/image.986147108.2204/pp,840x830-pad,1000x1000,f8f8f8.jpg',
     bio: 'Bringer of donuts.',
     button_id: '',
-    status: 'active',
+    status: 'graduate',
   },
   {
     id: 8,
@@ -144,7 +144,7 @@ const studentData = [
     img: 'https://us.123rf.com/450wm/esheluxina/esheluxina1811/esheluxina181100153/127708976-business-and-finance-flat-style-vector-illustration-clipart-.jpg?ver=6',
     bio: 'Comes from Taiwan and works as an accountant.',
     button_id: 'michelle',
-    status: 'active',
+    status: 'graduate',
   },
   {
     id: 12,
